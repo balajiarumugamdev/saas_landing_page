@@ -5,7 +5,7 @@ import logo from "@/assets/logosaas.png";
 
 export const Header = () => {
   return (
-    <header>
+    <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center bg-black py-3">
         <span className="hidden md:inline text-white/60 px-3">
           Streamline your workflow and boost your productivity.
