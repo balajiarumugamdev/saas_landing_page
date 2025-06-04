@@ -8,11 +8,11 @@ export const Hero = () => {
   return (
     <section
       aria-labelledby="productivity-heading"
-      className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_80%)] overflow-x-clip"
+      className="pt-8 lg:pt-0 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_80%)] overflow-x-clip"
     >
       <div className="container mx-0">
         <div className="md:flex lg:gap-16 items-center">
-          <div className="md:w-[458px] lg:w-[558px]">
+          <div className="md:w-[458px] lg:w-[538px]">
             <p
               className="inline-block font-medium text-sm tracking-tight border border-[#222]/10 rounded-lg px-3 py-1"
               aria-label="Announcement"
@@ -20,7 +20,7 @@ export const Hero = () => {
               Version 2.0 is here
             </p>
             <h1
-              className="font-bold text-5xl md:text-7xl lg:text-8xl tracking-tight mt-6 bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text"
+              className="font-bold text-5xl md:text-7xl lg:text-[86px] tracking-tight mt-6 bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text"
               id="productivity-heading"
             >
               Pathway to Productivity
@@ -49,24 +49,24 @@ export const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
+          <div className="mt-20 md:mt-0 md:h-[648px] lg:h-[748px] md:flex-1 relative">
             <Image
               src={cogImage}
               alt="Cog Image"
-              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
+              className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:-left-12"
             />
             <Image
               src={cylinderImage}
               width={220}
               height={220}
               alt="Cylinder Image"
-              className="hidden md:block -top-8 -left-32 md:absolute"
+              className="hidden md:block -top-8 lg:-top-0 md:-left-32 lg:-left-40 md:absolute"
             />
             <Image
               src={noodleImage}
               width={220}
               alt="Noodle Image"
-              className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
+              className="hidden lg:block absolute top-[524px] lg:top-[628px] left-[448px] rotate-[30deg]"
             />
           </div>
         </div>
